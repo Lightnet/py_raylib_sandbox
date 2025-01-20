@@ -1,8 +1,9 @@
 # py_raylib_sandbox
 
+# LICENSE: CC0 1.0 Universal
 
-# python raylib:
- * The raylib.* functions are potentially slightly faster than the pyray.* equivalents, so if you need a tiny bit more performance you can switch your inner loop functions to these.
+# Created By: Lightnet
+
 
 # Information:
  Work in progress. Testing the python with raylib libs.
@@ -26,10 +27,12 @@ print(dir(raylib)) #display functions and api
 
   Install pipenv.
 
+  Create folder.
 ```
 .venv
 ```
-
+  
+  Run virtual shell.
 ```
 pipenv shell
 ```
@@ -59,5 +62,6 @@ pipenv install customtkinter
  * https://www.youtube.com/watch?v=vdNrNCqT8No  Let's Code DOOM #1 - Initial Setup
  * https://www.youtube.com/watch?v=1pPnbqwGqHw&t=372s
  * 
- * 
- * 
+
+# python raylib:
+ * The raylib.* functions are potentially slightly faster than the pyray.* equivalents, so if you need a tiny bit more performance you can switch your inner loop functions to these.
