@@ -54,6 +54,9 @@ pipenv install <package name>
 pipenv install customtkinter
 ```
 
+# VSCode:
+ Using the python ext. to debug run test.
+
 # refs:
  * https://www.raylib.com/examples/models/loader.html?name=models_mesh_generation
  * https://www.youtube.com/watch?v=fMjXq6xwZEE  Don't Miss Out! Raylib is the Best Game Engine for Python | Master 2D and 3D Game Development Now
