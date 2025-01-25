@@ -82,6 +82,9 @@ class Entity_Management:
         print("FOUND PLAYER")
         current_player = self.entities[i]
         break
+
+    if current_player == None:
+      return
     for i in range(len(self.entities)):
       if self.entities[i].TYPE == CreatureType.MOB:
         print("FOUND OPPENONT")
@@ -90,15 +93,31 @@ class Entity_Management:
 
     current_opponent.stats.health -= 1
 
+  def mob_attack(self):
+    print("Entity mob_attack")
+    current_player = None
+    current_opponent = None
+    for i in range(len(self.entities)):
+      if self.entities[i].TYPE == CreatureType.PLAYER:
+        print("FOUND PLAYER")
+        current_player = self.entities[i]
+        break
+    print("current_player:", current_player)
+    if current_player == None:
+      return
+    for i in range(len(self.entities)):
+      if self.entities[i].TYPE == CreatureType.MOB:
+        print("FOUND OPPENONT")
+        current_opponent = self.entities[i]
+        break
+
+    current_player.stats.health -= 1
+    print("HP:",current_player.stats.health)
   #pass
 
   def entities_stats(self):
     for i in range(len(self.entities)):
       print("Entity: ", self.entities[i])
-
-  def mob_attack(self):
-    pass
-
   #
   def create_creature(self):
     pass
