@@ -30,7 +30,7 @@ class Engine:
   def draw(self):
     pr.begin_drawing()
     #
-    pr.clear_background(pr.RAYWHITE)
+    pr.clear_background(pr.BLACK)
     #pr.clear_background(pr.RAYWHITE)
     #
     self.draw_2d()

@@ -12,6 +12,9 @@ class Stats:
     self.str = 1
     self.agi = 1
     self.vit = 1
+    self.tp = 1
+    self.tp_cap = 10
+    self.tp_reg = 1
     pass
 
 
@@ -35,6 +38,12 @@ class Creature:
     self.name = name
     self.stats = Stats()
     self.TYPE = _type
+    self.is_turn = False
+    self.is_down = False
+    #self.is_animation = False
+    #self.is_animation_finished = False
+    #self.melee_range = 1
+    #self.range = 0
 
   def __repr__(self):
     
